@@ -2,8 +2,10 @@ Rails.application.routes.draw do
   get '/about', to: 'about#index'
   get "/signup", to: "users#new"
   get "/login", to: "sessions#new"
+  get "/logout", to: "sessions#destroy"
 
   post "/users", to: "users#create"
+  post "/login", to: "sessions#create"
   
   root to: 'products#index'
 
