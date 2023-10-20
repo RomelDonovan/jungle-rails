@@ -1,0 +1,25 @@
+<header class="page-header">
+<h1>SignUp!</h1>
+</header>
+
+<div class="form-group">
+<%= form_for :user, url: '/users' do |form| %>
+
+  <%= form.label :first_name %>
+  <%= form.text_field :first_name %>
+  <br/>
+  <%= form.label :last_name %>
+  <%= form.text_field :last_name %>
+  <br/>
+  <%= form.label :email %>
+  <%= form.text_field :email %>
+  <br/>
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+  <br/>
+  <%= form.label :password_confirmation %>
+  <%= form.password_field :password_confirmation %>
+  <br/>
+  <%= form.submit "Submit" %>
+<% end %>
+</div>
