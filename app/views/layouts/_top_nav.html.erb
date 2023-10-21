@@ -46,6 +46,19 @@
         </li> %>
       </ul>
       <ul class="navbar-nav">
+      <% if current_user %>
+        <!-- If a user is logged in, display a "Log Out" button -->
+        <li class="nav-item">
+          <%= link_to 'Log Out', [:logout], class: "nav-link" %>
+        </li>
+      <% else %>
+        <a>
+          <%= link_to "Login", "/login", class: "nav-link" %>
+        </a>
+        <a>
+          <%= link_to "SignUp", "/signup", class: "nav-link" %>
+        </a>
+        <% end %>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-danger"
