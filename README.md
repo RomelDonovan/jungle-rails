@@ -2,6 +2,24 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## Screenshots
+### Homepage
+![Homepage](/docs/home_page.png)
+### Login Page
+![Login](/docs/login_page.png)
+### Evergreen
+![Evergreen](/docs/Category_evergreen.png)
+### Cart
+![Cart](/docs/full_cart.png)
+![Empty_Cart](/docs/empty_cart.png)
+### Checkout Test
+![Checkout](/docs/checkout_test.png)
+### Order Details
+![Order](/docs/order_details.png)
+### Cypress Test
+![Cypress](/docs/cypress_add_to_cart_test.png)
+
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
@@ -29,3 +47,5 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+- Rspec 3.11
+- Cypress 9.7.0
